@@ -11,7 +11,7 @@ print(my_dict['tuple'][-1])
 my_dict['list'].append('forever')
 my_dict['list'].pop(1)
 
-my_dict['dict']['i am a tuple'] = 'WTF tuple??'
+my_dict['dict'][('i am a tuple',)] = 'WTF tuple??'
 del my_dict['dict']['language']
 
 my_dict['set'].add('800 x 600')
