@@ -1,11 +1,8 @@
 # Задание 1
 person = ['John', 'Doe', 'New York', '+1372829383739', 'US']
 
-name = person[0]
-last_name = person[1]
-city = person[2]
-phone = person[3]
-country = person[4]
+name, last_name, city, phone, country = person
+print(name, last_name, city, phone, country)
 
 # Задание 2
 
@@ -25,7 +22,7 @@ students = ['Ivanov', 'Petrov', 'Sidorov']
 
 subjects = ['math', 'biology', 'geography']
 
-# students_1 = ' '.join(students)
+students_1 = ', '.join(students)
 subjects_2 = ' '.join(subjects)
 
-print(f'Students {students[0]}, {students[1]}, {students[2]} study these subjects: {subjects_2}')
+print(f'Students {students_1} study these subjects: {subjects_2}')
