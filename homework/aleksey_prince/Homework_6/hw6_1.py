@@ -7,7 +7,8 @@ quis molestie enim imperdiet vel. Integer urna nisl, facilisis vitae semper at, 
 """
 import string
 
-verse = "Etiam tincidunt neque erat, quis molestie enim imperdiet vel. Integer urna nisl, facilisis vitae semper at, dignissim vitae libero."
+verse = ("Etiam tincidunt neque erat, quis molestie enim imperdiet vel. Integer urna nisl, facilisis vitae semper at,"
+         " dignissim vitae libero.")
 verse_splits = verse.split()
 ing = 'ing'
 c = []
