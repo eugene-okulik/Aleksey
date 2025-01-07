@@ -8,5 +8,6 @@ max_temperature = min(temperatures_hot)
 avg_temperature = (sum(temperatures_hot) / len(temperatures_hot))
 
 print(
-    f'Высокая температура: {low_temperature}\nНизкая температура: {max_temperature}\nСредняя температура: {avg_temperature:.0f}'
+    f'Высокая температура: {low_temperature}\nНизкая температура: {max_temperature}\nСредняя температура:'
+    f' {avg_temperature:.0f}'
 )
