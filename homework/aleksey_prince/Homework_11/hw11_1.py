@@ -11,10 +11,12 @@ class Book:
 
     def __str__(self):
         reserved_info = ', зарезервирована' if self.reserve else ""
-        return f"Название: {self.name_book}, Автор: {self.author}, страниц: {self.count_page}, материал: {self.material_page}{reserved_info}"
+        return (f"Название: {self.name_book}, Автор: {self.author}, страниц: {self.count_page}, материал: "
+                f"{self.material_page}{reserved_info}")
 
 
-book_1 = Book('Искусство автономного тестирования с примерами на С#', 'Рой Ошероуве', 500, '100')
+book_1 = Book('Искусство автономного тестирования с примерами на С#', 'Рой Ошероуве', 500,
+              '100')
 book_2 = Book('Fundamentals of Software Testing', 'Homes Bernard', 304, '200')
 book_3 = Book('Гибкое тестирование. Практическое руководство для тестировщиков ПО и гибких команд',
               'Лайза Криспин, Джанет Грегори', 545, '300')
@@ -36,11 +38,14 @@ class SchoolBooks(Book):
 
     def __str__(self):
         base_info = ', зарезервирована' if self.reserve else ""
-        return f'Название: {self.name_book}, Автор: {self.author}, страниц: {self.count_page}, предмет: {self.item}, класс: {self.class_room}{base_info}'
+        return (f'Название: {self.name_book}, Автор: {self.author}, страниц: {self.count_page}, предмет: {self.item},'
+                f' класс: {self.class_room}{base_info}')
 
 
-book_6 = SchoolBooks('Алгебра 8 класс', 'Макарычев', 300, '2342422', 'Математика', 9, task=True)
-book_7 = SchoolBooks('История России', 'Ракипов', 1000, '4324225', 'История', 9, task=True, reserve=True)
+book_6 = SchoolBooks('Алгебра 8 класс', 'Макарычев', 300, '2342422',
+                     'Математика', 9, task=True)
+book_7 = SchoolBooks('История России', 'Ракипов', 1000, '4324225',
+                     'История', 9, task=True, reserve=True)
 
 for books in [book_6, book_7]:
     print(books)
